@@ -1,26 +1,27 @@
 import './index.scss'
+import { TextDetail } from '../../App'
 
-const ResultBox = () => {
+const ResultBox = ({ results } : any)  => {
   const resultBar = [
     {
       title: 'Words',
-      value: 0,
+      value: results?.words,
     },
     {
       title: 'Characters',
-      value: 0,
+      value: results?.chars,
     },
     {
       title: 'Sentences',
-      value: 0,
+      value: results?.sentences,
     },
     {
       title: 'Paragraphs ',
-      value: 0,
+      value: results?.paragraph,
     },
     {
       title: 'Pronouns',
-      value: 0,
+      value: results?.pronouns,
     },
   ]
 
